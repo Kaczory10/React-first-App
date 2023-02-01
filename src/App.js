@@ -8,9 +8,9 @@ const App = () => {
   return (
     <div>
       <Container>
-      <Hero />
-      <SearchForm />
-      <List />
+        <Hero />
+        <SearchForm />
+        <List />
       </Container>
     </div>
   );
