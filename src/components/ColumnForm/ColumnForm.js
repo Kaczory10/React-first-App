@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
-// import styles from './ColumnForm.module.scss';
 
 const ColumnForm = props => {
     const dispatch = useDispatch();
@@ -14,12 +13,6 @@ const ColumnForm = props => {
         setTitle('');
         setIcon('');
      };
-    // const handleSubmit = e => {
-    //     e.preventDefault();
-    //     props.action({ title: value, icon: icon });
-    //     setTitle('');
-    //     setIcon('');
-    // };
 
 	return (
 <form  onSubmit={handleSubmit}>
