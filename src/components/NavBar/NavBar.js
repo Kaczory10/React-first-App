@@ -1,5 +1,6 @@
 import styles from './NavBar.module.scss';
 import Container from "../Container/Container.js";
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = props => {
     return (
@@ -9,11 +10,32 @@ const NavBar = props => {
                     <button className={ styles.navbarHamburger }>
                         <i className='fa fa-bars'></i>
                     </button>
-                    <div className={ styles.navbarLinks }>
-                        <a href="/" className={ styles.navbarLink }>Home</a>
-                        <a href="/about" className={ styles.navbarLink }>Favourite</a>
-                        <a href="/favorite" className={ styles.navbarLink }>About</a>
-                    </div>
+                    <ul className={ styles.navbarLinks }>
+                        <li>
+                            <NavLink 
+                                className={ ({ isActive }) => isActive ? styles.linkActive : ''  } 
+                                to="/"
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink 
+                                className={ ({ isActive }) => isActive ? styles.linkActive : ''  } 
+                                to="/favorite"
+                            >
+                                Favorite
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink 
+                                className={ ({ isActive }) => isActive ? styles.linkActive : ''  } 
+                                to="/about"
+                            >
+                                About
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
             </Container>
         </nav>
