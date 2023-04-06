@@ -1,0 +1,14 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.heading {
+    text-align: center;
+    margin-bottom: $base-size;
+}
+
+.favorites {
+  margin-top: $base-size * 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
