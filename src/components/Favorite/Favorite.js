@@ -2,8 +2,8 @@ import { useSelector } from "react-redux";
 import Card from "../Card/Card";
 import columnStyles from "../Column/Column.module.scss";
 import styles from "./Favorite.module.scss";
-import { getFavoriteCards } from "../../redux/store";
 import { Navigate } from "react-router-dom";
+import { getFavoriteCards } from "../../redux/cardsRedux";
 
 const Favorite = () => {
   const favoriteCards = useSelector(getFavoriteCards);

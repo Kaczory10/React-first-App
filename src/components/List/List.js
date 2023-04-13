@@ -3,8 +3,9 @@ import Column from "./../Column/Column";
 import ColumnForm from "../ColumnForm/ColumnForm";
 import SearchForm from "../SearchForm/SearchForm.js";
 import { useSelector } from 'react-redux';
-import { getListById, getColumnsByList } from "../../redux/store";
 import { Navigate, useParams } from "react-router-dom";
+import { getListById } from "../../redux/listsRedux";
+import { getColumnsByList } from "../../redux/columnsRedux";
 
 const List = () => {
   const { listId } = useParams();

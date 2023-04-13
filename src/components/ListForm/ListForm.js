@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addList } from "../../redux/store";
 import Button from "../Button/Button";
+import { addList } from "../../redux/listsRedux";
 
 const ListForm = () => {
   const dispatch = useDispatch();
